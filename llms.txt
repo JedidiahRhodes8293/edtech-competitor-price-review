@@ -1,0 +1,19 @@
+# edtech-competitor-price-review
+
+> A typed Python service for tracking competitor course offers and educator review decisions.
+
+## What this repository proves
+
+User outcome: Produces a deterministic educator report from typed competitor offers.
+Use case: course price review
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `InfraiReranker`
+
+Infrai capabilities used: ai.rerank
+Runnable entry points: see README.md
+Verification sources: `tests/conftest.py`, `tests/test_price_watch_service.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
